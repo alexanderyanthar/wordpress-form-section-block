@@ -1,0 +1,12 @@
+.wp-block-create-block-form-section {
+	.wp-block-form-section-list {
+		list-style-type: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-right: 1rem;
+		}
+	}
+}

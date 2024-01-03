@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/form-section",
+	"version": "0.1.0",
+	"title": "Form Section",
+	"category": "widgets",
+	"icon": "format-aside",
+	"description": "A resuable wpform with a side section containing a title, short description, and social icons",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"sectionTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		},
+		"sectionDescription": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"selectedIcons": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"textdomain": "form-section",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
